@@ -4,7 +4,7 @@ var fs = require('fs'),
 
 
 
-    fs.readdir('./',  function(err, files) {
+fs.readdir('./',  function(err, files) {
 
     fs.writeFile('./dir.txt', files.join('\n') , function(err) {
         if(err) throw err;
