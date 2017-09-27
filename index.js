@@ -2,16 +2,13 @@ var fs = require('fs'),
     StatMode = require('stat-mode'),
     colors = require('colors');
 
-
-
 fs.readdir('./',  function(err, files) {
 
     fs.writeFile('./dir.txt', files.join('\n') , function(err) {
         if(err) throw err;
-        
     });
-
     console.log("Finished!".red);
+
 });
 
 
